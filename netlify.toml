@@ -1,0 +1,22 @@
+# Settings in the [build] context are global and are applied to all contexts
+# unless otherwise overridden by more specific contexts.
+[build]
+base = "src/"
+publish = "public/"
+command = "hugo --gc --minify"
+
+[context.production.environment]
+HUGO_VERSION = "0.59.1"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+# Configure pull request build actions
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.59.1"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+
