@@ -48,10 +48,6 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
 
-  # 404 page
-  title404 = "Nothing to see here"
-  subtitle404 = "This may be caused by a bug, or I'm just been lazy"
-
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.
   [[params.social]]
