@@ -76,8 +76,8 @@ flycheck_*.el
 
 ### Hugo ###
 # Generated files by hugo
-/public/
-/resources/_gen/
+src/public/
+src/resources/_gen/
 
 # Executable may be added to repository
 hugo.exe
